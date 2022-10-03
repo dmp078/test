@@ -1,0 +1,10 @@
+<div class="pb-4">
+  <div class="rounded-lg bg-white shadow-sm px-2">
+    <div class="flex pt-2 pb-2 border-slate-300 ">
+      <h1 class="my-auto font-bold">{{cart.title}}</h1>
+      <i class="fa-solid fa-angle-right text-[#a0a6ae] my-auto ml-2 text-sm"></i>
+    </div>
+
+    <app-product *ngFor="let product of listProduct" [product] = "product"></app-product>
+  </div>
+</div>
