@@ -18,12 +18,14 @@
   <div class="w-full px-6 py-4 bg-[#fcf8f7]">
     <app-cart *ngFor="let cart of listCart" [cart] = "cart"></app-cart>
   </div>
+  <div class="w-full h-40 bg-[#fcf8f7]"></div>
+
 
   <!-- Pay -->
   <div class="bg-white w-full fixed font-bold bottom-0 shadow-inner">
     <div class="flex px-6 py-2">
       <i class="fa-solid fa-pencil text-sm mr-2 text-blue-600 my-auto"></i>
-      <input type="text" placeholder="Ghi chú">
+      <input type="text" placeholder="Ghi chú" class="outline-none text-sm">
     </div>
 
     <div class="px-6 flex justify-between bg-[#fbf1f0] font-bold py-2">
@@ -32,7 +34,7 @@
     </div>
 
     <div class="px-6">
-      <div class="text-center bg-red-600 text-white text-lg py-4 rounded-lg my-2">
+      <div class="text-center bg-red-600 text-white text-lg py-3 rounded-lg my-2">
         Thanh toán ngay
       </div>
     </div>
