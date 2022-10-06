@@ -2,22 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { DetailComponent } from './detail/detail.component';
-import { SearchComponent } from './search/search.component';
-import { PayComponent } from './pay/pay.component';
-import { CartComponent } from './cart/cart.component';
-import { ProductComponent } from './product/product.component';
+import { AddressComponent } from './Checkout/address/address.component';
+import { NewComponent } from './Checkout/new/new.component';
+import { EditComponent } from './Checkout/edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    DetailComponent,
-    SearchComponent,
-    PayComponent,
-    CartComponent,
-    ProductComponent
+    AddressComponent,
+    NewComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule
