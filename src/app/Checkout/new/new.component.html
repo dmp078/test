@@ -14,11 +14,11 @@
       </div>
 
       <div class="mb-3 mt-2 px-2">
-        <input type="text" placeholder="Họ và tên" class="input w-full px-2 h-10 text-lg" />
+        <input type="text" placeholder="Họ và tên" class="input focus:outline-none w-full px-2 h-10 text-lg" />
       </div>
 
       <div class="mb-3 mt-2 px-2">
-        <input type="text" placeholder="Số điện thoại" class="input w-full px-2 h-10 text-lg" />
+        <input type="text" placeholder="Số điện thoại" class="input focus:outline-none w-full px-2 h-10 text-lg" />
       </div>
     </div>
 
@@ -28,30 +28,52 @@
       </div>
 
       <div class="my-3 px-2 relative">
-        <input type="text" placeholder="Tỉnh/Thành phố" class="input w-full px-2 h-10 text-lg" />
-        <i class="fa-solid fa-angle-right rotate-90 absolute right-5 top-3"></i>
+        <div class="dropdown dropdown-end w-full">
+          <label tabindex="0" class="btn h-10 px-2 min-h-0 normal-case w-full flex justify-between text-[#9ca3af] hover:bg-[#ffffff] bg-[#ffffff] focus:bg-[#ffffff] border-none">
+            <h1 class="text-lg">Tỉnh/Thành phố</h1>
+            <i class="fa-solid fa-angle-right rotate-90 my-auto"></i>
+          </label>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-full">
+            <li><a>Hà Nội</a></li>
+            <li><a>Hồ Chí Minh</a></li>
+          </ul>
+        </div>
       </div>
 
       <div class="my-3 px-2 relative">
-        <input type="text" placeholder="Quận/Huyện" class="input w-full px-2 h-10 text-lg" />
-        <i class="fa-solid fa-angle-right rotate-90 absolute right-5 top-3"></i>
+        <div class="dropdown dropdown-end w-full">
+          <label tabindex="0" class="btn h-10 px-2 min-h-0 normal-case w-full flex justify-between text-[#9ca3af] hover:bg-[#ffffff] bg-[#ffffff] focus:bg-[#ffffff] border-none">
+            <h1 class="text-lg">Quận/Huyện</h1>
+            <i class="fa-solid fa-angle-right rotate-90 my-auto"></i>
+          </label>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-full">
+            <li><a>Hà Nội</a></li>
+            <li><a>Hồ Chí Minh</a></li>
+          </ul>
+        </div>
       </div>
 
       <div class="my-3 px-2 relative">
-        <input type="text" placeholder="Phường/Xã" class="input w-full px-2 h-10 text-lg" />
-        <i class="fa-solid fa-angle-right rotate-90 absolute right-5 top-3"></i>
+        <div class="dropdown dropdown-end w-full">
+          <label tabindex="0" class="btn h-10 px-2 min-h-0 normal-case w-full flex justify-between text-[#9ca3af] hover:bg-[#ffffff] bg-[#ffffff] focus:bg-[#ffffff] border-none">
+            <h1 class="text-lg">Phường/Xã</h1>
+            <i class="fa-solid fa-angle-right rotate-90 my-auto"></i>
+          </label>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-full">
+            <li><a>Hà Nội</a></li>
+            <li><a>Hồ Chí Minh</a></li>
+          </ul>
+        </div>
       </div>
 
       <div class="my-3 px-2 relative">
-        <input type="text" placeholder="Nhập địa chỉ cụ thể" class="input w-full px-2 h-10 text-lg" />
+        <input type="text" placeholder="Nhập địa chỉ cụ thể" class="input w-full px-2 h-10 text-lg focus:outline-none" />
       </div>
 
       <div class="px-2">
         <div class="my-3 px-2 rounded-md relative text-black flex justify-between bg-[#eaf4fa] py-[6px]">
           <h1 class="font-bold">Đặt làm địa chỉ mặc định</h1>
-          <div class="h-6 w-12 rounded-2xl bg-[#d9dfe6] my-auto flex">
-            <div class="h-6 w-6 rounded-2xl bg-[#233142]"></div>
-          </div>
+          <input type="checkbox" class="toggle my-auto" checked />
         </div>
       </div>
 
